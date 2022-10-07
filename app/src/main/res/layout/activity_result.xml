@@ -60,6 +60,7 @@
         tools:text="You Scored 0/10" />
 
     <Button
+        android:id="@+id/btnFinish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"

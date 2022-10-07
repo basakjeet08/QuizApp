@@ -2,8 +2,13 @@ package com.basakjeet08.quizapp
 
 object Constants {
 
-    fun getQuestions(): ArrayList<Questions> {
+    // Constant Variables used in the whole Program instead of the hardcoded Strings
+    const val USER_NAME = "user_name"
+    const val SCORE = "score"
+    const val MAX_QUESTIONS = "question_number"
 
+    fun getQuestions(): ArrayList<Questions> {
+        //QuestionList is an ArrayList which Contains Data Class Questions objects
         val questionsList = ArrayList<Questions>()
 
         // Question 1
@@ -13,8 +18,8 @@ object Constants {
             "Argentina", "Australia",
             "Armenia", "Austria", 1
         )
-
         questionsList.add(que)
+
 
         // Question 2
         que = Questions(
@@ -23,8 +28,8 @@ object Constants {
             "Angola", "Austria",
             "Australia", "Armenia", 3
         )
-
         questionsList.add(que)
+
 
         // Question 3
         que = Questions(
@@ -35,6 +40,7 @@ object Constants {
         )
         questionsList.add(que)
 
+
         // Question 4
         que = Questions(
             "What country does this flag belong to?",
@@ -42,8 +48,8 @@ object Constants {
             "Bahamas", "Belgium",
             "Barbados", "Belize", 2
         )
-
         questionsList.add(que)
+
 
         // Question 5
         que = Questions(
@@ -52,8 +58,8 @@ object Constants {
             "Gabon", "France",
             "Fiji", "Finland", 3
         )
-
         questionsList.add(que)
+
 
         // Question 6
         que = Questions(
@@ -62,8 +68,8 @@ object Constants {
             "Germany", "Georgia",
             "Greece", "none of these", 1
         )
-
         questionsList.add(que)
+
 
         // Question 7
         que = Questions(
@@ -72,8 +78,8 @@ object Constants {
             "Dominica", "Egypt",
             "Denmark", "Ethiopia", 3
         )
-
         questionsList.add(que)
+
 
         // Question 8
         que = Questions(
@@ -82,8 +88,8 @@ object Constants {
             "Ireland", "Iran",
             "Hungary", "India", 4
         )
-
         questionsList.add(que)
+
 
         // Question 9
         que = Questions(
@@ -92,8 +98,8 @@ object Constants {
             "Australia", "New Zealand",
             "Tuvalu", "United States of America", 2
         )
-
         questionsList.add(que)
+
 
         // Question 10
         que = Questions(
@@ -102,8 +108,9 @@ object Constants {
             "Kuwait", "Jordan",
             "Sudan", "Palestine", 1
         )
-
         questionsList.add(que)
+
+
         return questionsList
     }
 }
