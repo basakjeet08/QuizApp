@@ -3,119 +3,113 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".QuizQuestions"
-    android:gravity="center"
     android:fillViewport="true"
-    >
+    android:gravity="center"
+    tools:context=".QuizQuestions">
+
     <LinearLayout
         android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:padding="16dp"
-        >
+        android:orientation="vertical"
+        android:padding="16dp">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Which Country Flag is this"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:layout_marginBottom="16dp"
-            />
+            tools:text="Which Country Flag is this" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:src="@drawable/ic_flag_of_argentina"
             android:layout_marginBottom="16dp"
             android:importantForAccessibility="no"
-            />
+            tools:src="@drawable/ic_flag_of_argentina" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <ProgressBar
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:minHeight="50dp"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:progress="0"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:max="10"
-                />
+                android:minHeight="50dp"
+                android:progress="0" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="15dp"
-                tools:text="0/10"
                 android:gravity="center"
-                android:textSize="16sp"
+                android:padding="15dp"
                 android:textColor="@color/black"
-                />
-    </LinearLayout>
+                android:textSize="16sp"
+                tools:text="0/10" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/tvOptionOne"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:background="@drawable/default_option_border_bg"
             android:layout_marginTop="16dp"
-            android:minHeight="50dp"
+            android:background="@drawable/default_option_border_bg"
             android:gravity="center"
+            android:minHeight="50dp"
             android:padding="15dp"
-            tools:text="Apple"
-            />
+            android:textSize="18sp"
+            tools:text="Apple" />
 
         <TextView
             android:id="@+id/tvOptionTwo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:background="@drawable/default_option_border_bg"
             android:layout_marginTop="16dp"
-            android:minHeight="50dp"
+            android:background="@drawable/default_option_border_bg"
             android:gravity="center"
+            android:minHeight="50dp"
             android:padding="15dp"
-            tools:text="Apple"
-            />
+            android:textSize="18sp"
+            tools:text="Apple" />
 
         <TextView
             android:id="@+id/tvOptionThree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:background="@drawable/default_option_border_bg"
             android:layout_marginTop="16dp"
-            android:minHeight="50dp"
+            android:background="@drawable/default_option_border_bg"
             android:gravity="center"
+            android:minHeight="50dp"
             android:padding="15dp"
-            tools:text="Apple"
-            />
+            android:textSize="18sp"
+            tools:text="Apple" />
 
         <TextView
             android:id="@+id/tvOptionFour"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:background="@drawable/default_option_border_bg"
             android:layout_marginTop="16dp"
-            android:minHeight="50dp"
+            android:background="@drawable/default_option_border_bg"
             android:gravity="center"
+            android:minHeight="50dp"
             android:padding="15dp"
-            tools:text="Apple"
-            />
+            android:textSize="18sp"
+            tools:text="Apple" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/submit"
             android:layout_marginTop="16dp"
+            android:text="@string/submit"
             android:textSize="16sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
